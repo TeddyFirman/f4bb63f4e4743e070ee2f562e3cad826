@@ -54,14 +54,14 @@ function Projects({ projects }: Props) {
                             viewport={{ once: true }}
                             src={urlFor(project?.image).url()} alt="" />
                         <div className="space-y-4 px-0 md:px-10 max-w-6xl">
-                            <h4 className="text-3xl font-semibold text-center">
+                            <h4 className="text-[12px] md:text-3xl font-semibold text-center">
                                 <span className="underline decoration-[#F7AB0A]/50">Project: {project?.title} </span>
                             </h4>
 
                             <div className="flex items-center space-x-2 justify-center">
                                 {project?.technologies.map(technology => (
                                     <img
-                                        className="h-10 w-10"
+                                        className="h-[20px] w-[20px] md:h-10 md:w-10"
                                         key={technology?._id} src={urlFor(technology?.image).url()} alt="" />
                                 ))}
                             </div>

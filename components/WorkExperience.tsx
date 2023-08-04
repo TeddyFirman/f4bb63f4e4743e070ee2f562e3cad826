@@ -38,10 +38,10 @@ function WorkExperience({ experiences }: Props) {
             {/* <h3 className="absolute top-12 md:top-20 uppercase tracking-[2vw] text-gray-500 text-xl md:text-2xl">
                 Experience
             </h3> */}
-            <h3 className="absolute top-24 md:top-20 md:-mt-16 uppercase tracking-[20px] text-gray-500 text-2xl md:text-4xl">
+            <h3 className="absolute top-24 md:top-20 md:-mt-16 uppercase tracking-[20px] text-gray-500 ngukuk:text-[15px] text-2xl md:text-4xl">
                 Experience
             </h3>
-            <div className="w-full flex space-x-5 overflow-x-scroll p-5 md:p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 mt-40 md:mt-30 lg:mt-30 xl:mt-6">
+            <div className="w-full flex space-x-5 overflow-x-scroll p-5 md:p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 mt-24 md:mt-30 lg:mt-30 xl:mt-6">
 
                 
                     <ExperienceCard experiences={experiences} />

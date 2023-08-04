@@ -82,6 +82,8 @@ export default async function Home() {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
 
+    {/* // <div className="bg-[rgb(36,36,36)] text-white overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"> */}
+
       <Head>
         <title>{pageInfo?.name} - Portfolio</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -121,14 +123,24 @@ export default async function Home() {
       </section>
 
       <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
+        <footer className="sticky bottom-20 md:bottom-12 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              className="h-7 w-7 md:h-10 md:w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://cdn.sanity.io/images/f6lvo73m/production/8bf9d08fc126b7b8a96e22a9e67b00a1d60a6f6a-128x128.png" alt="" />
           </div>
         </footer>
       </Link>
+
+      {/* <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <img
+              className="h-7 w-7 md:h-10 md:w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              src="https://cdn.sanity.io/images/f6lvo73m/production/8bf9d08fc126b7b8a96e22a9e67b00a1d60a6f6a-128x128.png" alt="" />
+          </div>
+        </footer>
+      </Link> */}
 
     </div>
   )

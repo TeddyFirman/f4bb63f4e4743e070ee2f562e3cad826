@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    // screens: {
+    //   'ngukuk': '320px',
+    // },
   },
   plugins: [
     require('tailwind-scrollbar'),

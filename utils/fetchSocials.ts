@@ -28,10 +28,14 @@ export const fetchSocial = async () => {
   //   `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getSocials`,
   // );
 
-  const isVercel = process.env.NEXT_PUBLIC_VERCEL_URL === 'https://teddyfirman.vercel.app';
+  // const isVercel = process.env.NEXT_PUBLIC_VERCEL_URL === 'https://teddyfirman.vercel.app';
+
+  // const res = await fetch(
+  //   `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getSocials`,
+  // );
 
   const res = await fetch(
-    `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getSocials`,
+    'https://teddyfirman.vercel.app/api/getSocials'
   );
 
   const data = await res.json();

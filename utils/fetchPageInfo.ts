@@ -29,10 +29,14 @@ export const fetchPageInfo = async () => {
   //   `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getPageInfo`,
   // );
 
-  const isVercel = process.env.NEXT_PUBLIC_VERCEL_URL === 'https://teddyfirman.vercel.app';
+  // const isVercel = process.env.NEXT_PUBLIC_VERCEL_URL === 'https://teddyfirman.vercel.app';
+
+  // const res = await fetch(
+  //   `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getPageInfo`,
+  // );
 
   const res = await fetch(
-    `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getPageInfo`,
+    'https://teddyfirman.vercel.app/api/getPageInfo'
   );
 
   const data = await res.json();
