@@ -22,8 +22,14 @@
 import { Experience } from "@/typings";
 
 export const fetchExperiences = async () => {
+  // const res = await fetch(
+  //   `${process.env.VERCEL_URL ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getExperience`,
+  // );
+
+  const isVercel = process.env.VERCEL_ENV === 'production';
+
   const res = await fetch(
-    `${process.env.VERCEL_URL ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getExperience`,
+    `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getExperience`,
   );
 
   const data = await res.json();
