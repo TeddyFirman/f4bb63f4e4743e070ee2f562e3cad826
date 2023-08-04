@@ -25,7 +25,13 @@ export const fetchProjects = async () => {
   // const res = await fetch(
   //   `${process.env.VERCEL_URL ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getProjects`,
   // );
-  const isVercel = process.env.VERCEL_ENV === 'production';
+  // const isVercel = process.env.VERCEL_ENV === 'production';
+
+  // const res = await fetch(
+  //   `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getProjects`,
+  // );
+
+  const isVercel = process.env.NEXT_PUBLIC_VERCEL_URL === 'https://teddyfirman.vercel.app';
 
   const res = await fetch(
     `${isVercel ? 'https://teddyfirman.vercel.app' : 'http://localhost:3000'}/api/getProjects`,
